@@ -18,7 +18,7 @@ extension Leilao: Matchable {
 
 class EncerradorDeLeilaoTests: XCTestCase {
     
-    private var formatador: DateFormatter!;
+   private var formatador: DateFormatter!;
     private var encerradorDeLeilao: EncerradorDeLeilao!;
     private var fakeDao: MockLeilaoDao!;
     private var carteiroFake: MockCarteiro!;
@@ -80,7 +80,7 @@ class EncerradorDeLeilaoTests: XCTestCase {
         verify(fakeDao).atualiza(leilao: leilao3Ds);
     }
     
-    func testContiaAExecucaoDepoisDeFalhaDoDanco(){
+    func testContinuaAExecucaoDepoisDeFalhaDoDanco(){
         guard let dataAntiga = formatador.date(from: "2019/02/01") else { return; }
         
         let leilaoPsVita = CriadorDeLeilao().para(descricao: "PS Vita").naData(data: dataAntiga).constroi();
