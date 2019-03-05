@@ -29,7 +29,7 @@ class AvaliadorTests: XCTestCase {
     }
     
     func testDeveEntenderLancesEmOrdemCrescente() {
-        let leilao = Leilao(descricao: "Switch")
+        let leilao = Leilao(descricao: "Playstation 4")
         leilao.propoe(lance: Lance(maria, 250.0))
         leilao.propoe(lance: Lance(joao, 300.0))
         leilao.propoe(lance: Lance(jose, 400.0))

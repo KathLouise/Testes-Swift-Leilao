@@ -10,6 +10,7 @@ target 'Leilao' do
   target 'LeilaoTests' do
     inherit! :search_paths
     # Pods for testing
+    pod 'Cuckoo'
   end
 
   target 'LeilaoUITests' do
