@@ -11,4 +11,5 @@
 * Instalação e uso do [Cuckoo](https://github.com/Brightify/Cuckoo) para criação de Mocks
 * Testando com mock se o app sobrevive a um lançamento de exceção do banco de dados
 * Testando com mock e usando ArgumentCaptor para obter dados
+* Uso de injeção de dependencia para facilitar os testes
 
